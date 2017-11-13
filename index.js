@@ -9,6 +9,8 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   return object
 }
 
-//why does it have to be bracket notation 
+//why does it have to be bracket notation
 
-function deleteFromObjectByKey(object, key)
+function deleteFromObjectByKey(object, key){
+  Object.assign({}, object, {[key]: value})
+}
